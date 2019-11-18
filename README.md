@@ -1,4 +1,4 @@
-### datedetect
+# datedetect
 
 Get possible string format codes of the given datetime object.
 
@@ -16,7 +16,7 @@ Supports Python 3.6+.
 
 >>> datedetect.get_format_codes(["10-10-2019", "10-12-2019", "21-1-2019"], verbose=True)
 # first date can be both dd-MM-yyyy, MM-dd-yyyy, d-M-yyyy, M-d-yyyy
-# second date be dd-MM-yyyy d-M-yyyy MM-dd-yyyy M-dd-yyyy
+# second date be dd-MM-yyyy d-M-yyyy MM-dd-yyyy M-d-yyyy
 # third date is d-M-yyyy
 [{'format': '%-d-%-m-%Y', 'display_name': 'd-M-yyyy', 'count': 3},
  {'format': '%d-%m-%Y', 'display_name': 'dd-MM-yyyy', 'count': 2},
