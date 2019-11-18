@@ -15,9 +15,9 @@ Supports Python 3.6+.
 [{'format': '%Y-%m-%d %H:%M:%S.%f%z', 'display_name': 'yyyy-MM-dd HH:mm:ss.ffffffzzz', 'count': 1}]
 
 >>> datedetect.get_format_codes(["10-10-2019", "10-12-2019", "21-1-2019"], verbose=True)
-# first two can be both dd-MM-yyyy, MM-dd-yyyy, d-M-yyyy, M-d-yyyy
-# second can be dd-MM-yyyy d-M-yyyy MM-dd-yyyy M-dd-yyyy
-# third one is d-M-yyyy
+# first date can be both dd-MM-yyyy, MM-dd-yyyy, d-M-yyyy, M-d-yyyy
+# second date be dd-MM-yyyy d-M-yyyy MM-dd-yyyy M-dd-yyyy
+# third date is d-M-yyyy
 [{'format': '%-d-%-m-%Y', 'display_name': 'd-M-yyyy', 'count': 3},
  {'format': '%d-%m-%Y', 'display_name': 'dd-MM-yyyy', 'count': 2},
  {'format': '%m-%d-%Y', 'display_name': 'MM-dd-yyyy', 'count': 2},
